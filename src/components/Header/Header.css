@@ -1,0 +1,41 @@
+.header {
+  @apply
+  flex
+  flex-row
+  text-base
+  p-4
+  gap-4
+}
+
+.header__brand {
+  @apply 
+  font-extrabold
+  text-transparent
+  text-2xl
+  bg-clip-text
+  bg-gradient-to-r
+  from-blue-600
+  via-pink-500
+  to-orange-500
+  cursor-pointer
+}
+
+.header__spacer {
+  @apply
+  flex-1
+}
+
+.header__item {
+  @apply
+  rounded-lg
+  p-2
+  px-4
+  transition-colors
+}
+
+.header__item:hover {
+  @apply
+  bg-orange-700
+  rounded-lg
+  cursor-pointer
+}
