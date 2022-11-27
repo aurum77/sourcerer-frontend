@@ -1,15 +1,13 @@
 .header {
-  @apply
-  flex
+  @apply flex
   flex-row
   text-base
   p-4
-  gap-4
+  gap-4;
 }
 
 .header__brand {
-  @apply 
-  font-extrabold
+  @apply font-extrabold
   text-transparent
   text-2xl
   bg-clip-text
@@ -17,25 +15,22 @@
   from-blue-600
   via-pink-500
   to-orange-500
-  cursor-pointer
+  cursor-pointer;
 }
 
 .header__spacer {
-  @apply
-  flex-1
+  @apply flex-1;
 }
 
 .header__item {
-  @apply
-  rounded-lg
+  @apply rounded-lg
   p-2
   px-4
-  transition-colors
+  transition-colors;
 }
 
 .header__item:hover {
-  @apply
-  bg-orange-700
+  @apply bg-orange-700
   rounded-lg
-  cursor-pointer
+  cursor-pointer;
 }

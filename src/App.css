@@ -2,5 +2,5 @@ body {
   @apply bg-gradient-to-r
   from-slate-900
   to-black
-  text-white
+  text-white;
 }
