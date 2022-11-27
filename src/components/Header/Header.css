@@ -26,11 +26,8 @@
   @apply rounded-lg
   p-2
   px-4
-  transition-colors;
-}
-
-.header__item:hover {
-  @apply bg-orange-700
-  rounded-lg
-  cursor-pointer;
+  transition-colors
+  hover:bg-orange-600
+  hover:rounded-lg 
+  hover:cursor-pointer;
 }
