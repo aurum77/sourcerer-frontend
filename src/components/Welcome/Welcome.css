@@ -3,7 +3,8 @@
   flex-row
   place-content-between
   mx-2
-  p-4;
+  p-4
+  overflow-hidden;
 }
 
 .welcome__msg {
@@ -17,9 +18,9 @@
   from-blue-600
   via-pink-500
   to-orange-500
-  mx-4;
+  mx-4
 }
 
 .welcome__img {
-  @apply w-96;
+  @apply max-w-sm;
 }
