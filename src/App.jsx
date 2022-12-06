@@ -1,16 +1,14 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
-import { Header, Welcome } from "./components";
-import { Footer } from "./components/Footer/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { WelcomePage } from "./pages";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Welcome />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element=<WelcomePage /> />
+      </Routes>
+    </Router>
   );
 }
 

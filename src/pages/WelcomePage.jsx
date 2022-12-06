@@ -1,6 +1,6 @@
-import { Header, Welcome, Footer } from "./components";
+import { Header, Welcome, Footer } from "../components";
 
-function WelcomePage() {
+export function WelcomePage() {
   return (
     <>
       <Header />
