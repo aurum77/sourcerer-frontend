@@ -1,4 +1,4 @@
-.header {
+.navbar {
   @apply flex
   flex-row
   text-base
@@ -6,7 +6,7 @@
   gap-4;
 }
 
-.header__brand {
+.navbar__brand {
   @apply font-extrabold
   text-transparent
   text-2xl
@@ -18,11 +18,11 @@
   cursor-pointer;
 }
 
-.header__spacer {
+.navbar__spacer {
   @apply flex-1;
 }
 
-.header__item {
+.navbar__item {
   @apply rounded-lg
   p-2
   px-4

@@ -1,3 +1,9 @@
-export { Header } from "./Header";
-export { Welcome } from "./Welcome";
-export { Footer } from "./Footer";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Hero from "./Hero";
+
+export {
+  Navbar,
+  Footer,
+  Hero
+}

@@ -1,4 +1,4 @@
-.welcome__container {
+.hero__container {
   @apply flex
   flex-row
   place-content-between
@@ -7,7 +7,7 @@
   overflow-hidden;
 }
 
-.welcome__msg {
+.hero__msg {
   @apply flex
   flex-col
   font-bold
@@ -21,6 +21,6 @@
   mx-4
 }
 
-.welcome__img {
+.hero__img {
   @apply max-w-sm;
 }
