@@ -1,4 +1,5 @@
 import "./Hero.css";
+import { mars } from "../assets";
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
         <div>heckin</div>
         <div>website</div>
       </div>
-      <img src="../public/mars.png" className="hero__img" />
+      <img src={mars} className="hero__img" />
     </div>
   );
 };
