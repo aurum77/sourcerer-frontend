@@ -2,8 +2,8 @@
   @apply flex
   flex-row
   text-base
-  p-4
-  gap-4;
+  px-10
+  py-8;
 }
 
 .navbar__brand {
@@ -18,14 +18,17 @@
   cursor-pointer;
 }
 
-.navbar__spacer {
-  @apply flex-1;
+.navbar__list {
+  @apply flex
+  flex-1
+  justify-end
+  flex-row;
 }
 
 .navbar__item {
   @apply rounded-lg
   p-2
-  px-4
+  mx-2
   transition-colors
   hover:bg-orange-600
   hover:rounded-lg 

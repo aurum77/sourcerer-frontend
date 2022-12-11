@@ -1,15 +1,16 @@
 import "./Navbar.css";
+import { navlinks } from "../constants";
 
 const Hero = () => {
   return (
-    <navbar>
-      <div className="navbar">
+      <nav className="navbar">
         <div className="navbar__brand">SOURCERER</div>
-        <div className="navbar__spacer" />
-        <div className="navbar__item">Sign in</div>
-        <div className="navbar__item">Sign up</div>
-      </div>
-    </navbar>
+        <ul className="navbar__list">
+          {navlinks.map((nav) => (
+            <li className="navbar__item" ey={nav.id}>{nav.title}</li>
+          ))}
+        </ul>
+      </nav>
   );
 };
 

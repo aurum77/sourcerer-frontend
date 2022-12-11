@@ -10,11 +10,15 @@
   bottom-0;
 }
 
-.footer__spacer {
-  @apply flex-1;
+.footer__list {
+  @apply flex
+  flex-1
+  flex-row
+  justify-end;
 }
 
-.footer__items {
+.footer__item {
   @apply hover:underline
+  px-4
   cursor-pointer;
 }
