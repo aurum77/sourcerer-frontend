@@ -10,9 +10,10 @@
   bottom-0;
 }
 
-.footer__reserved {
-  @apply absolute
-  my-6
+.footer__copyright {
+  @apply flex
+  flex-col
+  sm:flex-row
   sm:static
   sm:my-0;
 }
