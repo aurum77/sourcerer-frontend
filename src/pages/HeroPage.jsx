@@ -1,7 +1,7 @@
 import { Navbar, Hero, Footer } from "../components";
 import { navlinks } from "../constants";
 
-export const HeroPage = () => {
+const HeroPage = () => {
   return (
     <>
       <Navbar>{navlinks}</Navbar>
@@ -10,3 +10,5 @@ export const HeroPage = () => {
     </>
   );
 };
+
+export default HeroPage;
