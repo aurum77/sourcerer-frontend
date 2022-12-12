@@ -2,6 +2,7 @@
   @apply flex
   flex-row
   text-base
+  items-center
   px-10
   py-8;
 }
@@ -19,18 +20,53 @@
 }
 
 .navbar__list {
-  @apply flex
+  @apply sm:flex
   flex-1
+  flex-row
   justify-end
-  flex-row;
+  hidden;
+}
+
+.navbar__mobile {
+  @apply sm:flex
+  flex-1
+  flex-col;
 }
 
 .navbar__item {
   @apply rounded-lg
   p-2
-  mx-2
   transition-colors
   hover:bg-orange-600
   hover:rounded-lg 
   hover:cursor-pointer;
+}
+
+.navbar__item--mobile {
+  @apply p-2
+  transition-colors
+  hover:bg-orange-600
+  hover:cursor-pointer;
+}
+
+.navbar__hamburger {
+  @apply sm:hidden
+  flex
+  flex-1
+  justify-end
+  items-center;
+}
+
+.navbar__list--mobile {
+  @apply flex
+  flex-1
+  flex-col
+  text-center
+  sm:hidden
+  sm:justify-end;
+}
+
+.navbar__hamburgerimg {
+  @apply cursor-pointer
+  w-6;
 }

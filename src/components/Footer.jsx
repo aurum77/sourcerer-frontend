@@ -5,7 +5,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__reserved">
-        &#169; 2022 Taskify &#8482;. All rights reserved{" "}
+        <div>&#169; 2022 Taskify &#8482; </div>
+        <div>All rights reserved</div>
       </div>
       <ul className="footer__list">
         {footerlinks.map((link) => (

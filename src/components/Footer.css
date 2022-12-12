@@ -10,15 +10,24 @@
   bottom-0;
 }
 
+.footer__reserved {
+  @apply absolute
+  my-6
+  sm:static
+  sm:my-0;
+}
+
 .footer__list {
   @apply flex
   flex-1
-  flex-row
+  sm:flex-row
+  flex-col
+  text-right
   justify-end;
 }
 
 .footer__item {
   @apply hover:underline
-  px-4
+  px-2
   cursor-pointer;
 }
