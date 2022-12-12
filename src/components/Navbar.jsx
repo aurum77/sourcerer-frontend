@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const Navbar = ({ children }) => {
   const [toggle, setToggle] = useState(false);
-  console.log(children);
 
   return (
     <>
@@ -12,7 +11,7 @@ const Navbar = ({ children }) => {
         <div className="navbar__brand">SOURCERER</div>
         <ul className="navbar__list">
           {children.map((child) => (
-            <li className="navbar__item">{child.title}</li>
+            <li className="navbar__item" key={child.id} onClick={() => navigate(`${child.id}`)}>{child.title}</li>
           ))}
         </ul>
         <div className="navbar__hamburger">
@@ -26,7 +25,7 @@ const Navbar = ({ children }) => {
       <div className={`navbar__mobile ${toggle ? "" : "hidden"}`}>
         <ul className="navbar__list--mobile">
           {children.map((child) => (
-            <li className="navbar__item--mobile">{child.title}</li>
+            <li className="navbar__item--mobile" key={child.id} onClick={() => navigate(`${child.id}`)}>{child.title}</li>
           ))}
         </ul>
       </div>
