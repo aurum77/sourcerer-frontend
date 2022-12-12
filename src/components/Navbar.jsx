@@ -1,20 +1,18 @@
 import "./Navbar.css";
-import { navlinks } from "../constants";
 import { menu, close } from "../assets";
 import { useState } from "react";
 
-const Hero = () => {
+const Navbar = ({ children }) => {
   const [toggle, setToggle] = useState(false);
+  console.log(children);
 
   return (
     <>
       <nav className="navbar">
         <div className="navbar__brand">SOURCERER</div>
         <ul className="navbar__list">
-          {navlinks.map((nav) => (
-            <li className="navbar__item" key={nav.id}>
-              {nav.title}
-            </li>
+          {children.map((child) => (
+            <li className="navbar__item">{child.title}</li>
           ))}
         </ul>
         <div className="navbar__hamburger">
@@ -27,10 +25,8 @@ const Hero = () => {
       </nav>
       <div className={`navbar__mobile ${toggle ? "" : "hidden"}`}>
         <ul className="navbar__list--mobile">
-          {navlinks.map((nav) => (
-            <li className="navbar__item--mobile" key={nav.id}>
-              {nav.title}
-            </li>
+          {children.map((child) => (
+            <li className="navbar__item--mobile">{child.title}</li>
           ))}
         </ul>
       </div>
@@ -38,4 +34,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Navbar;

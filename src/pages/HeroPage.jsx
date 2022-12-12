@@ -1,9 +1,10 @@
 import { Navbar, Hero, Footer } from "../components";
+import { navlinks } from "../constants";
 
 export const HeroPage = () => {
   return (
     <>
-      <Navbar />
+      <Navbar>{navlinks}</Navbar>
       <Hero />
       <Footer />
     </>
