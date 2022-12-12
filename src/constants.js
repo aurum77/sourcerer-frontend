@@ -8,8 +8,8 @@ export const navlinks = [
     title: "Features"
   },
   {
-    id: "signin",
-    title: "Sign In"
+    id: "login",
+    title: "Login"
   },
   {
     id: "signup",
