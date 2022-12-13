@@ -6,9 +6,9 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="*" component={NotFoundPage} />
-        <Route path="/" component={HeroPage} />
-        <Route path="/login" component={LoginPage} />
+        <Route path="*" element=<NotFoundPage /> />
+        <Route path="/" element=<HeroPage /> />
+        <Route path="/login" element=<LoginPage /> />
       </Routes>
     </Router>
   );
