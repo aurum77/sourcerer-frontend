@@ -6,12 +6,12 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="*" element=<NotFoundPage /> />
-        <Route path="/" element=<HeroPage /> />
-        <Route path="/login" element=<LoginPage /> />
+        <Route path="*" element={<NotFoundPage />} />
+        <Route path="/" element={<HeroPage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
