@@ -17,6 +17,9 @@ const Login = () => {
         className="flex w-28 flex-col items-center justify-center gap-4"
         onSubmit={formik.handleSubmit}
       >
+        <div className="bg-gradient-to-r from-blue-600 via-pink-500 to-orange-500 bg-clip-text text-3xl font-extrabold text-transparent">
+          Login
+        </div>
         <div>
           <label className="mx-1" htmlFor="email">
             Email Address
