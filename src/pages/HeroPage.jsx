@@ -1,5 +1,5 @@
-import { Navbar, Hero, Footer } from "../components";
-import { navlinks } from "../constants";
+import { Navbar, Hero, Footer } from '../components';
+import { navlinks } from '../constants';
 
 const HeroPage = () => {
   return (

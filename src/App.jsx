@@ -1,6 +1,6 @@
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HeroPage, LoginPage, NotFoundPage } from "./pages";
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HeroPage, LoginPage, NotFoundPage } from './pages';
 
 const App = () => {
   return (

@@ -1,33 +1,33 @@
 export const navlinks = [
   {
-    id: "home",
-    title: "Home"
+    id: 'home',
+    title: 'Home',
   },
   {
-    id: "features",
-    title: "Features"
+    id: 'features',
+    title: 'Features',
   },
   {
-    id: "login",
-    title: "Login"
+    id: 'login',
+    title: 'Login',
   },
   {
-    id: "signup",
-    title: "Sign Up"
+    id: 'signup',
+    title: 'Sign Up',
   },
 ];
 
-export const footerlinks= [
+export const footerlinks = [
   {
-    id: "about",
-    title: "About"
+    id: 'about',
+    title: 'About',
   },
   {
-    id: "privacy",
-    title: "Privacy"
+    id: 'privacy',
+    title: 'Privacy',
   },
   {
-    id: "licensing",
-    title: "Licensing"
+    id: 'licensing',
+    title: 'Licensing',
   },
 ];

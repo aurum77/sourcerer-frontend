@@ -1,5 +1,5 @@
-import "./Footer.css";
-import { footerlinks } from "../constants";
+import './Footer.css';
+import { footerlinks } from '../constants';
 
 const Footer = () => {
   return (
