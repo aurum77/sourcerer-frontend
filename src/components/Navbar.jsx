@@ -1,44 +1,42 @@
-import "./Navbar.css";
-import { menu, close } from "../assets";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { menu, close } from '../assets';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = ({ children }) => {
-  const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
 
   return (
     <>
-      <nav className="navbar">
-        <div className="navbar__brand">SOURCERER</div>
-        <ul className="navbar__list">
+      <nav className="flex flex-row text-base items-center px-10 py-8">
+        <div className="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-600 via-pink-500 to-orange-500 cursor-pointer">
+          SOURCERER
+        </div>
+        <ul className="sm:flex flex-1 flex-row justify-end hidden">
           {children.map((child) => (
             <li
-              className="navbar__item"
+              className="rounded-lg p-2 transition-colors hover:bg-orange-600 hover:rounded-lg hover:cursor-pointer"
               key={child.id}
-              onClick={() => navigate(`${child.id}`)}
             >
-              {child.title}
+              <a href={child.id}>{child.title}</a>
             </li>
           ))}
         </ul>
-        <div className="navbar__hamburger">
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
-            className="navbar__hamburgerimg"
+            className="cursor-pointer w-6"
             src={toggle ? close : menu}
             onClick={() => setToggle((toggle) => !toggle)}
           />
         </div>
       </nav>
-      <div className={`navbar__mobile ${toggle ? "" : "hidden"}`}>
-        <ul className="navbar__list--mobile">
+      <div className={` sm:flex flex-1 flex-col ${toggle ? '' : 'hidden'}`}>
+        <ul className="flex flex-1 flex-col text-center sm:hidden sm:justify-end">
           {children.map((child) => (
             <li
-              className="navbar__item--mobile"
+              className="p-2 transition-colors hover:bg-orange-600 hover:cursor-pointer"
               key={child.id}
-              onClick={() => navigate(`${child.id}`)}
             >
-              {child.title}
+              <a href={child.id}>{child.title}</a>
             </li>
           ))}
         </ul>
