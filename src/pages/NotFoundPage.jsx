@@ -1,7 +1,12 @@
 import './NotFoundPage.jsx';
 
 const NotFoundPage = () => {
-  return <div>notfound</div>;
+  // https://http.cat/404
+  return (
+    <div className="grid h-screen place-items-center">
+      <img src="https://http.cat/404" />
+    </div>
+  );
 };
 
 export default NotFoundPage;
