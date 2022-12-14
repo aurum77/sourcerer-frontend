@@ -14,10 +14,10 @@ const Login = () => {
   return (
     <div className="grid h-screen place-items-center">
       <form
-        className="flex w-28 flex-col items-center justify-center gap-4"
+        className="flex w-28 flex-col items-center justify-center gap-2"
         onSubmit={formik.handleSubmit}
       >
-        <div className="bg-gradient-to-r from-blue-600 via-pink-500 to-orange-500 bg-clip-text text-3xl font-extrabold text-transparent">
+        <div className="my-2 bg-gradient-to-r from-blue-600 via-pink-500 to-orange-500 bg-clip-text py-1 text-4xl font-extrabold text-transparent">
           Login
         </div>
         <div>
@@ -45,7 +45,7 @@ const Login = () => {
           />
         </div>
         <button
-          className="my-4 rounded-md bg-slate-800 px-6 py-2 hover:bg-slate-700"
+          className="my-1 rounded-md bg-slate-800 px-6 py-2 hover:bg-slate-700"
           type="submit"
         >
           Submit
