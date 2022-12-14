@@ -2,14 +2,14 @@ import { footerlinks } from '../constants';
 
 const Footer = () => {
   return (
-    <footer className="flex flex-row text-base p-10 text-slate-300 gap-4 fixed inset-x-0 bottom-0">
-      <div className="flex flex-col sm:flex-row sm:static sm:my-0">
+    <footer className="fixed inset-x-0 bottom-0 flex flex-row gap-4 p-10 text-base text-slate-300">
+      <div className="flex flex-col sm:static sm:my-0 sm:flex-row">
         <div>&#169; 2022 Sourcerer &#8482; &nbsp;</div>
         <div>All rights reserved</div>
       </div>
-      <ul className="flex flex-1 sm:flex-row flex-col text-right justify-end">
+      <ul className="flex flex-1 flex-col justify-end text-right sm:flex-row">
         {footerlinks.map((link) => (
-          <li className="hover:underline px-2 cursor-pointer" key={link.id}>
+          <li className="cursor-pointer px-2 hover:underline" key={link.id}>
             {link.title}
           </li>
         ))}

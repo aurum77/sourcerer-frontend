@@ -12,9 +12,9 @@ const Login = () => {
   });
 
   return (
-    <div className="grid place-items-center h-screen">
+    <div className="grid h-screen place-items-center">
       <form
-        className="flex flex-col justify-center items-center w-28 gap-4"
+        className="flex w-28 flex-col items-center justify-center gap-4"
         onSubmit={formik.handleSubmit}
       >
         <div>
@@ -22,7 +22,7 @@ const Login = () => {
             Email Address
           </label>
           <input
-            className="bg-gray-700 my-1 rounded-md h-8 p-6"
+            className="my-1 h-8 rounded-md bg-gray-700 p-6"
             name="email"
             type="email"
             onChange={formik.handleChange}
@@ -34,7 +34,7 @@ const Login = () => {
             Password
           </label>
           <input
-            className="bg-gray-700 my-1 rounded-md h-8 p-6"
+            className="my-1 h-8 rounded-md bg-gray-700 p-6"
             name="password"
             type="password"
             onChange={formik.handleChange}
@@ -42,7 +42,7 @@ const Login = () => {
           />
         </div>
         <button
-          className="bg-slate-800 my-1 rounded-md px-4 py-2"
+          className="my-4 rounded-md bg-slate-800 px-6 py-2 hover:bg-slate-700"
           type="submit"
         >
           Submit

@@ -7,33 +7,33 @@ const Navbar = ({ children }) => {
 
   return (
     <>
-      <nav className="flex flex-row text-base items-center px-10 py-8">
-        <div className="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-600 via-pink-500 to-orange-500 cursor-pointer">
+      <nav className="flex flex-row items-center px-10 py-8 text-base">
+        <div className="cursor-pointer bg-gradient-to-r from-blue-600 via-pink-500 to-orange-500 bg-clip-text text-2xl font-extrabold text-transparent">
           SOURCERER
         </div>
-        <ul className="sm:flex flex-1 flex-row justify-end hidden">
+        <ul className="hidden flex-1 flex-row justify-end sm:flex">
           {children.map((child) => (
             <li
-              className="rounded-lg p-2 transition-colors hover:bg-orange-600 hover:rounded-lg hover:cursor-pointer"
+              className="rounded-lg p-2 transition-colors hover:cursor-pointer hover:rounded-lg hover:bg-orange-600"
               key={child.id}
             >
               <a href={child.id}>{child.title}</a>
             </li>
           ))}
         </ul>
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="flex flex-1 items-center justify-end sm:hidden">
           <img
-            className="cursor-pointer w-6"
+            className="w-6 cursor-pointer"
             src={toggle ? close : menu}
             onClick={() => setToggle((toggle) => !toggle)}
           />
         </div>
       </nav>
-      <div className={` sm:flex flex-1 flex-col ${toggle ? '' : 'hidden'}`}>
+      <div className={` flex-1 flex-col sm:flex ${toggle ? '' : 'hidden'}`}>
         <ul className="flex flex-1 flex-col text-center sm:hidden sm:justify-end">
           {children.map((child) => (
             <li
-              className="p-2 transition-colors hover:bg-orange-600 hover:cursor-pointer"
+              className="p-2 transition-colors hover:cursor-pointer hover:bg-orange-600"
               key={child.id}
             >
               <a href={child.id}>{child.title}</a>
