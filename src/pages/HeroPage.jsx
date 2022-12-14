@@ -6,7 +6,6 @@ const HeroPage = () => {
     <>
       <Navbar>{navlinks}</Navbar>
       <Hero />
-      <Footer />
     </>
   );
 };
