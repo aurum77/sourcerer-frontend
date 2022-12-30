@@ -4,10 +4,12 @@ const Register = () => {
   const formik = useFormik({
     initialValues: {
       email: '',
-      password: '',
       firstName: '',
       lastName: '',
+      userName: '',
       phoneNumber: '',
+      password: '',
+      confirmPassword: '',
     },
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
@@ -23,7 +25,7 @@ const Register = () => {
         <div className="my-2 bg-gradient-to-r from-blue-600 via-pink-500 to-orange-500 bg-clip-text py-1 text-4xl font-extrabold text-transparent">
           Register
         </div>
-        <div className="flex flex-row gap-8">
+        <div className="flex flex-col sm:flex-row gap-8">
           <div>
             <div>
               <label className="mx-1" htmlFor="email">
@@ -43,7 +45,7 @@ const Register = () => {
               </label>
               <input
                 className="my-1 h-8 rounded-md bg-gray-700 p-6"
-                name="firstname"
+                name="firstName"
                 type="text"
                 onChange={formik.handleChange}
                 value={formik.values.firstName}
@@ -55,7 +57,7 @@ const Register = () => {
               </label>
               <input
                 className="my-1 h-8 rounded-md bg-gray-700 p-6"
-                name="lastname"
+                name="lastName"
                 type="text"
                 onChange={formik.handleChange}
                 value={formik.values.lastName}
@@ -69,7 +71,7 @@ const Register = () => {
               </label>
               <input
                 className="my-1 h-8 rounded-md bg-gray-700 p-6"
-                name="phonenumber"
+                name="phoneNumber"
                 type="tel"
                 onChange={formik.handleChange}
                 value={formik.values.phoneNumber}
@@ -93,13 +95,25 @@ const Register = () => {
               </label>
               <input
                 className="my-1 h-8 rounded-md bg-gray-700 p-6"
-                name="password"
+                name="confirmPassword"
                 type="password"
                 onChange={formik.handleChange}
-                value={formik.values.password}
+                value={formik.values.confirmPassword}
               />
             </div>
           </div>
+        </div>
+        <div>
+          <label className="mx-1" htmlFor="password">
+            Username
+          </label>
+          <input
+            className="my-1 h-8 rounded-md bg-gray-700 p-6"
+            name="userName"
+            type="text"
+            onChange={formik.handleChange}
+            value={formik.values.userName}
+          />
         </div>
         <button
           className="my-1 rounded-md bg-slate-800 px-6 py-2 hover:bg-slate-700"
