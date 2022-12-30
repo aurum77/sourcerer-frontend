@@ -2,7 +2,11 @@ import { menu, close } from '../assets';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Navbar = ({ children }) => {
+type NavbarProps = {
+  children: Array<navlink>;
+};
+
+const Navbar = ({ children }: NavbarProps): JSX.Element => {
   const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
 
@@ -14,7 +18,12 @@ const Navbar = ({ children }) => {
         </div>
         <div className="hidden flex-1 flex-row justify-end sm:flex">
           {children.map((child) => (
-              <div className="rounded-lg p-2 transition-colors hover:cursor-pointer hover:rounded-lg hover:bg-orange-600" onClick={() => navigate(child.id)} href={child.id}>{child.title}</div>
+            <div
+              className="rounded-lg p-2 transition-colors hover:cursor-pointer hover:rounded-lg hover:bg-orange-600"
+              onClick={() => navigate(child.id)}
+            >
+              {child.title}
+            </div>
           ))}
         </div>
         <div className="flex flex-1 items-center justify-end sm:hidden">
@@ -28,7 +37,12 @@ const Navbar = ({ children }) => {
       <div className={` flex-1 flex-col sm:flex ${toggle ? '' : 'hidden'}`}>
         <div className="flex flex-1 flex-col text-center sm:hidden sm:justify-end">
           {children.map((child) => (
-              <div className="p-2 transition-colors hover:cursor-pointer hover:bg-orange-600" onClick={() => navigate(child.id)} href={child.id}>{child.title}</div>
+            <div
+              className="p-2 transition-colors hover:cursor-pointer hover:bg-orange-600"
+              onClick={() => navigate(child.id)}
+            >
+              {child.title}
+            </div>
           ))}
         </div>
       </div>

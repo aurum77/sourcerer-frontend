@@ -1,6 +1,6 @@
 import { footerlinks } from '../constants';
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   return (
     <footer className="fixed inset-x-0 w-full bottom-0 flex flex-row gap-4 p-10 text-base text-slate-300">
       <div className="flex flex-col sm:static sm:my-0 sm:flex-row">

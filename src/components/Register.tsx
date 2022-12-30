@@ -1,6 +1,6 @@
 import { useFormik } from 'formik';
 
-const Register = () => {
+const Register = (): JSX.Element => {
   const formik = useFormik({
     initialValues: {
       email: '',
